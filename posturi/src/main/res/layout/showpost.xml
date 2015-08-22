@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+<RelativeLayout
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Generale"
+        android:id="@+id/textView"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:text="Post"
+        android:id="@+id/textView2"
+     />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/textView2"
+        android:paddingLeft="5dp"
+        android:id="@+id/titluPost"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:text="Tip Job"
+        android:id="@+id/textView3"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/textView3"
+        android:paddingLeft="5dp"
+        android:id="@+id/tipPost"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:text="Judet"
+        android:id="@+id/textView4"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/textView4"
+        android:paddingLeft="5dp"
+        android:id="@+id/judetPost"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:text="Data publicarii"
+        android:id="@+id/textView5"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_toRightOf="@+id/textView5"
+        android:paddingLeft="5dp"
+        android:id="@+id/dataPost"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:text="Institutie"
+        android:id="@+id/textView6"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_toRightOf="@+id/textView6"
+        android:paddingLeft="5dp"
+        android:id="@+id/institutiePost"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:paddingTop="30dp"
+        android:linksClickable="true"
+        android:id="@+id/continutPost"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/continutPost"
+        android:layout_alignParentLeft="true"
+        android:text="Pagina Precendeta"
+        android:id="@+id/buttonPaginaPrecedenta"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:background="#0063b6"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/continutPost"
+        android:layout_alignParentRight="true"
+        android:text="Add la favorite"
+        android:drawableLeft="@drawable/star_10"
+        android:background="#e3e3e3"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/albastrudeschis"
+        android:id="@+id/addToFavourites"/>
+
+</RelativeLayout>
+    </ScrollView>

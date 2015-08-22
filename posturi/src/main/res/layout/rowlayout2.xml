@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayoutRowLayout2"
+    >
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="160dp"
+        android:id="@+id/buttonColorBar2"/>
+    <TextView
+        android:id="@+id/titluPost2"
+        android:text="Post"
+        android:textSize="24dp"
+        android:paddingLeft="24dp"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/miniContinutPost2"
+        android:textSize="18dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="24dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/titluPost2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/miniContinutPost2"
+        android:text="Vezi detalii"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="18dp"
+        android:id="@+id/veziDetalii2"
+        android:textColor="#009ce5"/>
+</RelativeLayout>

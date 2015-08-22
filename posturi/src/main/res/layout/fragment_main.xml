@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="25dp"
+    android:paddingTop="25dp"
+    tools:context="com.example.posturigovro.posturi.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationDisplay"
+        android:textSize="18dp"/>
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationDisplay"
+        android:text="Filtrare oferte"
+        android:drawableLeft="@drawable/search"
+        android:paddingTop="-33dp"
+        android:textSize="21dp"
+        android:layout_marginTop="5dp"
+        android:background="#0063b6"
+        android:drawablePadding="-19dp"
+        android:paddingLeft="-19dp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentRight="true"
+        android:gravity="right|center"
+        android:id="@+id/searchButton"/>
+
+    <com.example.posturigovro.posturi.LoadMoreListView
+        android:id="@+id/listaPosturi"
+        android:paddingTop="15dp"
+        android:divider="@color/albastrudeschis"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchButton"/>
+
+</RelativeLayout>

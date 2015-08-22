@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="25dp"
+    android:paddingTop="25dp"
+    tools:context="com.example.posturigovro.posturi.MainActivity">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="22dp"
+           android:id="@+id/locatieTextView"
+           android:text="Locatie"/>
+       <RadioGroup
+            android:id="@+id/radioAlegere"
+            android:layout_below="@id/locatieTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Locatie curenta"
+                android:checked="true"
+                android:id="@+id/locatieCurentaRadioButton"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alta locatie"
+                android:id="@+id/altaLocatieRadioButton"
+                android:checked="false" />
+       </RadioGroup>
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioAlegere"
+            android:progress="1"
+            android:max="100"
+            android:id="@+id/radiusSearch" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radiusSearch"
+            android:id="@+id/radiusTextView"
+            android:text="Raza: 0km"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radiusTextView"
+            android:visibility="gone"
+            android:spinnerMode="dropdown"
+            android:id="@+id/locatitatiSearch"></Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tipJob"
+            android:layout_below="@id/locatitatiSearch"
+            android:text="Tip job"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tipJob"
+            android:id="@+id/permanentCheckBox"
+            android:text="Permanent"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/permanentCheckBox"
+            android:id="@+id/temporarCheckBox"
+            android:text="Temporar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locatitatiSearch"
+            android:layout_alignParentRight="true"
+            android:id="@+id/valabilitate"
+            android:text="Valabilitate"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/valabilitate"
+            android:layout_alignParentRight="true"
+            android:text="peste 20 zile"
+            android:id="@+id/zile20"
+            android:clickable="true" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zile20"
+            android:layout_alignParentRight="true"
+            android:text="intre 10 si 20 zile"
+            android:layout_alignLeft="@+id/zile20"
+            android:layout_alignStart="@+id/zile20"
+            android:id="@+id/intre"
+            android:clickable="true" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zile10"
+            android:text="sub 10 zile"
+            android:layout_below="@id/intre"
+            android:layout_alignLeft="@+id/intre"
+            android:layout_alignStart="@+id/intre"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuvant cheie"
+            android:layout_below="@id/zile10"
+            android:id="@+id/cuvantCheieTextView" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cuvantCheieTextView"
+            android:text="Cuvant Cheie"
+            android:id="@+id/cuvantCheie"/>
+         <Button
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cuvantCheie"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/search"
+            android:background="#0063b6"
+            android:drawablePadding="-30sp"
+            android:paddingTop="-75dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:text="Cautare"
+             android:textSize="24dp"
+             android:id="@+id/searchNow"
+            android:layout_toRightOf="@+id/permanentCheckBox" />
+
+</RelativeLayout>
+    </ScrollView>

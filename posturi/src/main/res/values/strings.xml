@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">posturi.gov.ro</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Setari</string>
+    <string name="navigation_drawer_open">Navigare deschisa</string>
+    <string name="navigation_drawer_close">Navigare inchisa</string>
+
+</resources>
